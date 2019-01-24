@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: 'Валера Бобров'(https://htmlacademy.ru/profile/id935921).
-* Наставник: `Михаил  Поданев`(https://htmlacademy.ru/profile/mpodanev).
+* Студент: [Валера Бобров](https://htmlacademy.ru/profile/id935921).
+* Наставник: [Михаил  Поданев](https://htmlacademy.ru/profile/mpodanev).
 
 ---
 
