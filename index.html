@@ -9,19 +9,21 @@
     <header class="main-header">
       <nav class="main-nav">
         <a href="index.html"><img src="img/logo.svg" alt="Лого магазина Глейси" width="154px" height="64px"></a>
-        <ul>
+        <ul class="list-section">
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="buy-page.html">Доставка и оплата</a></li>
           <li><a href="info-page.html">О Компании</a></li>
         </ul>
-         <!--Лупу я как понял не надо прописывать в коде(пока что)-->
+         <a href="search.html" class="search-button">Поиск</a>
          <a class="user-nav" href="login-in.href">Вход</a>
          <a class="user-basket" href="basket.html">Пусто</a>
+         <span>С 10 до 20, ежедневно</span>
+         <span class="number">8 812 450-25-25</span>
       </nav>
     </header>
     <main>
       <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
-      <img src="img/main-pic.png" alt="Главное картинка магазина Глейси" width="1045" height="881">
+      <img src="img/main-pic.png" alt="Главная картинка магазина Глейси" width="1045" height="881">
       <section class="product-info">
         <h2 class="visually-hidden">Преимущество магазина Глейси</h2>
         <!--Думал сдесь применить тег dl dt dd, но решил что это излишнее-->
@@ -48,31 +50,46 @@
       <section class="subscription">
         <h3 class="visually-hidden">Подписаться на рассылку</h3>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--Здесь будет форма-->
+        <form action="post" action="">
+          <input type="text" id="email-user" placeholder="Электронная почта">
+          <label for="email-user" class="red-button">Отправить</label>
+        </form>
       </section>
       <!--Здесь будет карта-->
     </main>
     <footer class="main-footer">
-      <ul class="list-social-network">
-        <li><a href="twitter.com"><img src="img/twitter-logo.jpeg" width="50px" height="50px" alt="Логотип твиттера"></a></li>
-        <li><a href="instagram.com"><img src="img/instagram-logo" width="50px" height="50px" alt="Логотип инстаграмма"></a></li>
-        <li><a href="facebook.com"><img src="img/facebook-logo" width="50px" height="50px" alt="Логотип фейсбука"></a></li>
-        <li><a href="vk.com"><img src="img/vk-logo" width="50px" height="50px" alt="Логотив вконтакте"></a></li>
-      </ul>
-      <ul class="documents">
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-      <div class="footer-copyright">
-        <a href="https://www.htmlacademy.ru"><img src="img/logo-academy" alt="Логотив HTML академии" width="100px" height="100px"></a>
+      <div class="footer-left">
+        <ul class="list-social-network">
+          <li><a href="twitter.com"><img src="img/twitter.svg" width="32" height="32" alt="Сылка на аккаунт в твиттере"></a></li>
+          <li><a href="instagram.com"><img src="img/instagram.svg" width="32" height="32" alt="Сылка на аккаунт в инстаграмме"></a></li>
+          <li><a href="facebook.com"><img src="img/fb.svg" width="32" height="32" alt="Сылка на аккаунт в фейсбуке"></a></li>
+          <li><a href="vk.com"><img src="img/vk.svg" width="32" height="32" alt="Сылка на аккаунт во вконтакте"></a></li>
+        </ul>
+      </div>
+      <div class="footer-center">
+        <ul class="documents">
+          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#">О производстве</a></li>
+          <li><a href="#">Наши документы</a></li>
+          <li><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Логотив HTML академии" width="108" height="39"></a>
         <p>Сделано в HTML Academy © 2019</p>
       </div>
     </footer>
     <section class="user-login">
       <h2 class="visually-hidden">Регестрация</h2>
-      <!--Сдесь будет форма-->
+      <form method="post" action="">
+        <input type="text" id="login-email" placeholder="Электронная почта">
+        <label for="login-email" class="visually-hidden">Электронная почта</label>
+        <input type="password" id="login-password" placeholder="Пароль">
+        <label for="login-password" class="visually-hidden">Пароль</label>
+        <button type="submit" class="red-button">Войти</button>
+        <a href="reset-password.html">Забыли пароль?</a>
+        <a href="registration.html">Новая регестрация</a>
+      </form>
     </section>
     <section class="search">
       <h2 class="visually-hidden">Поиск</h2>
@@ -80,7 +97,14 @@
     </section>
     <section class="feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <!--Здесь будет форма-->
+      <form>
+        <input type="text" id="contact-name" placeholder="Как вас зовут?">
+        <label for="contact-name">Как вас зовут?</label>
+        <input type="text" id="сontact-email" placeholder="Ваша почта для ответа?">
+        <label for="contact-email">Ваша почта для ответа?</label>
+        <input type="textarea" id="comments" placeholder="Напишите что-нибудь...">
+        <label for="cooments">Напишите что-нибудь...</label>
+      </form>
     </section>
   </body>
 </html>
