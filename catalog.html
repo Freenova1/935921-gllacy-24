@@ -2,7 +2,6 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <meta lang="Ru-ru">
         <title>Каталог</title>
     </head>
     <body>
@@ -13,11 +12,11 @@
                     <li class="linl-current">
                       <a href="catalog.html">Каталог</a>
                       <ul class="catalog-list">
-                        <li>Новинки</li>
-                        <li>Сливочное</li>
-                        <li>Щербеты</li>
-                        <li>Фруктовый лед</li>
-                        <li>Мелорин</li>
+                        <li><a href="new.html">Новинки</a></li>
+                        <li><a href="creamy.html">Сливочное</a></li>
+                        <li><a href="sorbet.html">Щербеты</a></li>
+                        <li><a href="fruit-ice.html">Фруктовый лед</a></li>
+                        <li><a href="melorin.html">Мелорин</a></li>
                       </ul>
                    </li>
                     <li><a href="buy-page.html">Доставка и оплата</a></li>
@@ -27,7 +26,7 @@
                    <a href="search.html" class="search-button">Поиск</a>
                    <section class="user-login">
                     <h2 class="visually-hidden">Регестрация</h2>
-                    <form method="post" action="">
+                    <form method="post" action="echo.htmlacademy.ru">
                       <input type="text" id="login-email" placeholder="Электронная почта">
                       <label for="login-email" class="visually-hidden">Электронная почта</label>
                       <input type="password" id="login-password" placeholder="Пароль">
@@ -43,7 +42,9 @@
                    <section class="search-popup">
                     <h2 class="visually-hidden">Поиск</h2>
                       <label for="search-area" class="visually-hidden">Что ищем?</label>
+                      <form action="echo.htmlacademy.ru" method="POST">
                       <input type="text" class="search-area" id="search-area" placeholder="Что ищем?">
+                      </form>
                   </section>
                   </div>
                   <div class="basket">
@@ -80,7 +81,7 @@
             </section>
             <section class="visually-hidden">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form action="" method="get">
+                <form action="echo.htmlacademy.ru" method="get">
                     <label for="sorting">Сортировка</label>
                     <select name="sorting" id="sorting">
                         <option value="by-popularity">По популярности</option>
@@ -89,15 +90,15 @@
                         <option value="by-fat">По жирности</option>
                     </select>
                     <label for="range-price">Цена: 100 руб. - 500 руб.</label>
-                    <input type="range" id="range-class">
-                    <label for="percent-fat">Жирность:</label>
+                    <input type="range" id="range-price">
+                    <label>Жирность:</label>
                     <ul>
                         <li><input type="radio" name="percent-fat" value="0">0%</li>
                         <li><input type="radio" name="percent-fat" value="10">10%</li>
                         <li><input type="radio" name="percent-fat" value="30">30%</li>
                         <li><input type="radio" name="percent-fat" value=">30">Выше 30%</li>
                     </ul>
-                    <label for="filler">Наполнители</label>
+                    <label>Наполнители</label>
                     <ul>
                         <li><input type="checkbox" name="filler" value="chocolate">Шоколадные</li>
                         <li><input type="checkbox" name="filler" value="shuger">Сахарные присыпки</li>
@@ -113,7 +114,7 @@
                 <ul>
                     <li class="product">
                         <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                        <img src="img/catalog-logo1.png" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <img src="img/catalog-logo1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                         <p>
                             <span class="price">310 Р</span>
                             <span class="unit">/кг</span>
@@ -121,7 +122,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочно-кофейное с кусочками шоколада</h3>
-                        <img src="img/catalog-logo2.png" width="267px" height="267px" alt="Сливочно-кофейное с кусочками шоколада">
+                        <img src="img/catalog-logo2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                         <p>
                             <span class="price">380 Р</span>
                             <span class="unit">/кг</span>
@@ -129,7 +130,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                        <img src="img/catalog-logo3.png" width="267px" height="267px" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                        <img src="img/catalog-logo3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                         <p>
                             <span class="price">355 Р</span>
                             <span class="unit">/кг</span>
@@ -137,7 +138,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочное крем-брюле с карамельной подливкой</h3>
-                        <img src="img/catalog-logo4.png" width="267px" height="267px" alt="Сливочное крем-брюле с карамельной подливкой">
+                        <img src="img/catalog-logo4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
                         <p>
                             <span class="price">415 Р</span>
                             <span class="unit">/кг</span>
@@ -145,7 +146,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочное с брусничным джемом</h3>
-                        <img src="img/catalog-logo5.png" width="267px" height="267px" alt="Сливочное с брусничным джемом">
+                        <img src="img/catalog-logo5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
                         <p>
                             <span class="price">325 Р</span>
                             <span class="unit">/кг</span>
@@ -153,7 +154,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочно-черничное с цельными ягодами черники</h3>
-                        <img src="img/catalog-logo6.png" width="267px" height="267px" alt="Сливочно-черничное с цельными ягодами черники">
+                        <img src="img/catalog-logo6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
                         <p>
                             <span class="price">410 Р</span>
                             <span class="unit">/кг</span>
@@ -161,7 +162,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочно-лимонное с карамельной присыпкой</h3>
-                        <img src="img/catalog-logo7.png" width="267px" height="267px" alt="Сливочно-лимонное с карамельной присыпкой">
+                        <img src="img/catalog-logo7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
                         <p>
                             <span class="price">375 Р</span>
                             <span class="unit">/кг</span>
@@ -169,7 +170,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочное с шоколадной стружкой</h3>
-                        <img src="img/catalog-logo8.png" width="267px" height="267px" alt="Сливочное с шоколадной стружкой">
+                        <img src="img/catalog-logo8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
                         <p>
                             <span class="price">320 Р</span>
                             <span class="unit">/кг</span>
@@ -177,7 +178,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочно-ванильное с кусочками шоколада</h3>
-                        <img src="img/catalog-logo9.png" width="267px" height="267px" alt="Сливочно-ванильное с кусочками шоколада">
+                        <img src="img/catalog-logo9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                         <p>
                             <span class="price">440 Р</span>
                             <span class="unit">/кг</span>
@@ -185,7 +186,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочноe с ментоловым сиропом</h3>
-                        <img src="img/catalog-logo10.png" width="267px" height="267px" alt="Сливочноe с ментоловым сиропом">
+                        <img src="img/catalog-logo10.png" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
                         <p>
                             <span class="price">435 Р</span>
                             <span class="unit">/кг</span>
@@ -193,7 +194,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочное с кусочками черного шоколада</h3>
-                        <img src="img/catalog-logo11.png" width="267px" height="267px" alt="Сливочное с кусочками черного шоколада">
+                        <img src="img/catalog-logo11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
                         <p>
                             <span class="price">355 Р</span>
                             <span class="unit">/кг</span>
@@ -201,7 +202,7 @@
                     </li>
                     <li class="product">
                         <h3>Сливочное с мятным сиропом</h3>
-                        <img src="img/catalog-logo12.png" width="267px" height="267px" alt="Cливочное с мятным сиропом">
+                        <img src="img/catalog-logo12.png" width="267" height="267" alt="Cливочное с мятным сиропом">
                         <p>
                             <span class="price">420 Р</span>
                             <span class="unit">/кг</span>
@@ -238,46 +239,17 @@
                     <a href="https://www.htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Логотив HTML академии" width="108" height="39"></a>
                     <p>Сделано в HTML Academy © 2019</p>
                 </div>
-                </footer>
-                <section class="user-login">
-                <h2 class="visually-hidden">Регестрация</h2>
-                <form method="post" action="">
-                    <input type="text" id="login-email" placeholder="Электронная почта">
-                    <label for="login-email" class="visually-hidden">Электронная почта</label>
-                    <input type="password" id="login-password" placeholder="Пароль">
-                    <label for="login-password" class="visually-hidden">Пароль</label>
-                    <button type="submit" class="red-button">Войти</button>
-                    <a href="reset-password.html">Забыли пароль?</a>
-                    <a href="registration.html">Новая регестрация</a>
-                </form>
-                <section class="buy-list">
-                    <h2 class="visually-hidden">Список покупок</h2>
-                    <!--Здесь будет форма-->
-                </section>
-                <section class="user-login">
-                        <h2 class="visually-hidden">Регестрация</h2>
-                        <form method="post" action="">
-                          <input type="text" id="login-email" placeholder="Электронная почта">
-                          <label for="login-email" class="visually-hidden">Электронная почта</label>
-                          <input type="password" id="login-password" placeholder="Пароль">
-                          <label for="login-password" class="visually-hidden">Пароль</label>
-                          <button type="submit" class="red-button">Войти</button>
-                          <a href="reset-password.html">Забыли пароль?</a>
-                          <a href="registration.html">Новая регестрация</a>
-                        </form>
-                      </section>
-                <section class="search">
-                    <h2 class="visually-hidden">Поиск</h2>
-                </section>
+        </footer>
+                
                     <section class="feedback">
                         <h2 class="visually-hidden">Обратная связь</h2>
                         <form>
                             <input type="text" id="contact-name" placeholder="Как вас зовут?">
                             <label for="contact-name">Как вас зовут?</label>
-                            <input type="text" id="сontact-email" placeholder="Ваша почта для ответа?">
+                            <input type="text" id="contact-email" placeholder="Ваша почта для ответа?">
                             <label for="contact-email">Ваша почта для ответа?</label>
-                            <input type="textarea" id="comments" placeholder="Напишите что-нибудь...">
-                            <label for="cooments">Напишите что-нибудь...</label>
+                            <input type="text" id="comments" placeholder="Напишите что-нибудь...">
+                            <label for="comments">Напишите что-нибудь...</label>
                     </form>
                 </section>    
     </body>

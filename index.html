@@ -2,22 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta lang="Ru-ru">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a href="index.html"><img src="img/logo.svg" alt="Лого магазина Глейси" width="154px" height="64px"></a>
+        <a href="index.html"><img src="img/logo.svg" alt="Лого магазина Глейси" width="154" height="64"></a>
         <ul class="list-section">
           <li>
             <a href="catalog.html">Каталог</a>
             <ul class="catalog-list">
-              <li>Новинки</li>
-              <li>Сливочное</li>
-              <li>Щербеты</li>
-              <li>Фруктовый лед</li>
-              <li>Мелорин</li>
+              <li><a href="new.html">Новинки</a></li>
+              <li><a href="creamy.html">Сливочное</a></li>
+              <li><a href="sorbet.html">Щербеты</a></li>
+              <li><a href="fruit-ice.html">Фруктовый лед</a></li>
+              <li><a href="melorin.html">Мелорин</a></li>
             </ul>
          </li>
           <li><a href="buy-page.html">Доставка и оплата</a></li>
@@ -25,9 +24,16 @@
         </ul>
          <div class="search">
          <a href="search.html" class="search-button">Поиск</a>
-         <section class="user-login">
+         <section class="search-popup">
+          <h2 class="visually-hidden">Поиск</h2>
+            <label for="search-area" class="visually-hidden">Что ищем?</label>
+            <input type="text" class="search-area" id="search-area" placeholder="Что ищем?">
+         </section>
+         </div>
+         <div class="user-login">
+            <a class="user-nav" href="login-in.href">Вход</a>
           <h2 class="visually-hidden">Регестрация</h2>
-          <form method="post" action="">
+          <form method="post" action="echo.htmlacademy.ru">
             <input type="text" id="login-email" placeholder="Электронная почта">
             <label for="login-email" class="visually-hidden">Электронная почта</label>
             <input type="password" id="login-password" placeholder="Пароль">
@@ -36,19 +42,9 @@
             <a href="reset-password.html">Забыли пароль?</a>
             <a href="registration.html">Новая регестрация</a>
           </form>
-        </section>
-        </div>
-        <div class="user">
-         <a class="user-nav" href="login-in.href">Вход</a>
-         <section class="search-popup">
-          <h2 class="visually-hidden">Поиск</h2>
-            <label for="search-area" class="visually-hidden">Что ищем?</label>
-            <input type="text" class="search-area" id="search-area" placeholder="Что ищем?">
-        </section>
         </div>
         <div class="basket">
          <a class="user-basket" href="basket.html">Пусто</a>
-        
         </div>
          <span>С 10 до 20, ежедневно</span>
          <span class="number">8 812 450-25-25</span>
@@ -83,7 +79,7 @@
       <section class="subscription">
         <h3 class="visually-hidden">Подписаться на рассылку</h3>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="post" action="">
+        <form method="post" action="echo.htmlacademy.ru">
           <input type="text" id="email-user" placeholder="Электронная почта">
           <label for="email-user" class="red-button">Отправить</label>
         </form>
@@ -118,10 +114,10 @@
       <form>
         <input type="text" id="contact-name" placeholder="Как вас зовут?">
         <label for="contact-name">Как вас зовут?</label>
-        <input type="text" id="сontact-email" placeholder="Ваша почта для ответа?">
+        <input type="text" id="contact-email" placeholder="Ваша почта для ответа?">
         <label for="contact-email">Ваша почта для ответа?</label>
-        <input type="textarea" id="comments" placeholder="Напишите что-нибудь...">
-        <label for="cooments">Напишите что-нибудь...</label>
+        <input type="text" id="comments" placeholder="Напишите что-нибудь...">
+        <label for="comments">Напишите что-нибудь...</label>
       </form>
     </section>
   </body>
