@@ -10,13 +10,46 @@
       <nav class="main-nav">
         <a href="index.html"><img src="img/logo.svg" alt="Лого магазина Глейси" width="154px" height="64px"></a>
         <ul class="list-section">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul class="catalog-list">
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
+         </li>
           <li><a href="buy-page.html">Доставка и оплата</a></li>
           <li><a href="info-page.html">О Компании</a></li>
         </ul>
+         <div class="search">
          <a href="search.html" class="search-button">Поиск</a>
+         <section class="user-login">
+          <h2 class="visually-hidden">Регестрация</h2>
+          <form method="post" action="">
+            <input type="text" id="login-email" placeholder="Электронная почта">
+            <label for="login-email" class="visually-hidden">Электронная почта</label>
+            <input type="password" id="login-password" placeholder="Пароль">
+            <label for="login-password" class="visually-hidden">Пароль</label>
+            <button type="submit" class="red-button">Войти</button>
+            <a href="reset-password.html">Забыли пароль?</a>
+            <a href="registration.html">Новая регестрация</a>
+          </form>
+        </section>
+        </div>
+        <div class="user">
          <a class="user-nav" href="login-in.href">Вход</a>
+         <section class="search-popup">
+          <h2 class="visually-hidden">Поиск</h2>
+            <label for="search-area" class="visually-hidden">Что ищем?</label>
+            <input type="text" class="search-area" id="search-area" placeholder="Что ищем?">
+        </section>
+        </div>
+        <div class="basket">
          <a class="user-basket" href="basket.html">Пусто</a>
+        
+        </div>
          <span>С 10 до 20, ежедневно</span>
          <span class="number">8 812 450-25-25</span>
       </nav>
@@ -79,24 +112,9 @@
         <p>Сделано в HTML Academy © 2019</p>
       </div>
     </footer>
-    <section class="user-login">
-      <h2 class="visually-hidden">Регестрация</h2>
-      <form method="post" action="">
-        <input type="text" id="login-email" placeholder="Электронная почта">
-        <label for="login-email" class="visually-hidden">Электронная почта</label>
-        <input type="password" id="login-password" placeholder="Пароль">
-        <label for="login-password" class="visually-hidden">Пароль</label>
-        <button type="submit" class="red-button">Войти</button>
-        <a href="reset-password.html">Забыли пароль?</a>
-        <a href="registration.html">Новая регестрация</a>
-      </form>
-    </section>
-    <section class="search">
-      <h2 class="visually-hidden">Поиск</h2>
-      <!--Здесь будет форма-->
-    </section>
     <section class="feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="feedback-title">Мы обязательно вам ответим!</p>
       <form>
         <input type="text" id="contact-name" placeholder="Как вас зовут?">
         <label for="contact-name">Как вас зовут?</label>

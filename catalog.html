@@ -9,14 +9,62 @@
         <header class="main-header">
             <nav class="main-nav">
             <a href="index.html"><img src="img/logo.svg" alt="Лого магазина Глейси" width="27" height="9"></a>
-            <ul>
-                <li class="link-current"><a href="catalog.html">Каталог</a></li>
-                <li><a href="buy-page.html">Доставка и оплата</a></li>
-                <li><a href="info-page.html">О Компании</a></li>
-            </ul>
-            <a href="search.html" class="search-button">Поиск</a>
-            <a class="user-nav" href="login-in.href">Вход</a>
-            <a class="user-basket" href="basket.html">2 товара</a>
+            <ul class="list-section">
+                    <li class="linl-current">
+                      <a href="catalog.html">Каталог</a>
+                      <ul class="catalog-list">
+                        <li>Новинки</li>
+                        <li>Сливочное</li>
+                        <li>Щербеты</li>
+                        <li>Фруктовый лед</li>
+                        <li>Мелорин</li>
+                      </ul>
+                   </li>
+                    <li><a href="buy-page.html">Доставка и оплата</a></li>
+                    <li><a href="info-page.html">О Компании</a></li>
+                  </ul>
+                   <div class="search">
+                   <a href="search.html" class="search-button">Поиск</a>
+                   <section class="user-login">
+                    <h2 class="visually-hidden">Регестрация</h2>
+                    <form method="post" action="">
+                      <input type="text" id="login-email" placeholder="Электронная почта">
+                      <label for="login-email" class="visually-hidden">Электронная почта</label>
+                      <input type="password" id="login-password" placeholder="Пароль">
+                      <label for="login-password" class="visually-hidden">Пароль</label>
+                      <button type="submit" class="red-button">Войти</button>
+                      <a href="reset-password.html">Забыли пароль?</a>
+                      <a href="registration.html">Новая регестрация</a>
+                    </form>
+                  </section>
+                  </div>
+                  <div class="user">
+                   <a class="user-nav" href="login-in.href">Вход</a>
+                   <section class="search-popup">
+                    <h2 class="visually-hidden">Поиск</h2>
+                      <label for="search-area" class="visually-hidden">Что ищем?</label>
+                      <input type="text" class="search-area" id="search-area" placeholder="Что ищем?">
+                  </section>
+                  </div>
+                  <div class="basket">
+                   <a class="user-basket" href="basket.html">2 товара</a>
+                    <table class="table-basket">
+                        <tr>
+                            <th><img src="img/catalog-logo1.png" width="33" height="33" alt=""></th>
+                            <th>Пломбир с апельсиновым джемом</th>
+                            <th>1,5 кг х 200 руб.</th>
+                            <th>300 руб.</th>
+                        </tr>
+                        <tr>
+                            <th><img src="img/catalog-logo3.png" width="33" height="33" alt=""></th>
+                            <th>Клубничный пломбир с присыпкой из белого шоколада</th>
+                            <th>1,5 кг х 300 руб.</th>
+                            <th>450 руб.</th>
+                        </tr>
+                    </table>
+                    <span class="table-result">Итого:750 руб.</span>
+                    <button type="button" class="red-button">Оформить заказ</button> 
+                  </div>
             <span>С 10 до 20, ежедневно</span>
             <span class="number">8 812 450-25-25</span>
             </nav>
@@ -40,19 +88,23 @@
                         <option value="by-expensive">Сначало дорогие</option>
                         <option value="by-fat">По жирности</option>
                     </select>
-                    <!--Не знаю как делать цену-->
+                    <label for="range-price">Цена: 100 руб. - 500 руб.</label>
+                    <input type="range" id="range-class">
                     <label for="percent-fat">Жирность:</label>
-                    <input type="radio" name="percent-fat" value="0">0%
-                    <input type="radio" name="percent-fat" value="10">10%
-                    <input type="radio" name="percent-fat" value="30">30%
-                    <input type="radio" name="percent-fat" value=">30">Выше 30%
-                    
+                    <ul>
+                        <li><input type="radio" name="percent-fat" value="0">0%</li>
+                        <li><input type="radio" name="percent-fat" value="10">10%</li>
+                        <li><input type="radio" name="percent-fat" value="30">30%</li>
+                        <li><input type="radio" name="percent-fat" value=">30">Выше 30%</li>
+                    </ul>
                     <label for="filler">Наполнители</label>
-                    <input type="checkbox" name="filler" value="chocolate">Шоколадные
-                    <input type="checkbox" name="filler" value="shuger">Сахарные присыпки
-                    <input type="checkbox" name="filler" value="fruct">Фрукты
-                    <input type="checkbox" name="filler" value="syrup">Сиропы
-                    <input type="checkbox" name="filler" value="jam">Джем
+                    <ul>
+                        <li><input type="checkbox" name="filler" value="chocolate">Шоколадные</li>
+                        <li><input type="checkbox" name="filler" value="shuger">Сахарные присыпки</li>
+                        <li><input type="checkbox" name="filler" value="fruct">Фрукты</li>
+                        <li><input type="checkbox" name="filler" value="syrup">Сиропы</li>
+                        <li><input type="checkbox" name="filler" value="jam">Джем</li>
+                    </ul>
                     <button type="submit" class="button-filter">Применить</button>
                 </form>
             </section>
