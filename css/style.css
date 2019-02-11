@@ -1,0 +1,264 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color:#ffffff;
+
+    background-color: #849d8f;
+}
+
+a {
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.list-section li {
+    font-size: 16px;
+    line-height:18px;
+    color:#ffffff;
+    list-style-type: none;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.list-section a:hover,
+.list-section a:focus {
+    padding: 5px;
+    background-color: #ffffff;
+    color:#333333;
+    border-radius: 14px;
+    /*Не работает */
+    text-decoration: none;
+}
+
+.catalog-list a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+    list-style-type: none;
+    font-weight: normal;
+    /* не работает*/
+    text-decoration: none;
+}
+
+.new-link {
+    font-weight: bold;
+}
+
+.catalog-list a:hover,
+.catalog-list a:focus {
+    background-color: #fbded7;
+    border-radius: 0px;
+    font-weight: normal;
+}
+
+.catalog-list a:active {
+    background-color: #f6b5a5;
+}
+
+.user-nav {
+    font-size: 14px;
+    line-height: 16px;
+    color:#ffffff;
+}
+
+.user-nav:hover,
+.user-nav:focus {
+    padding: 10px;
+    background-color: #ffffff;
+    color:#333333;
+    border-radius: 8px;
+}
+
+.user-help a {
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+    text-decoration: underline;
+    line-height: 16px;
+}
+
+.user-basket {
+    font-size: 14px;
+    line-height: 16px;
+    color:#ffffff;
+}
+
+.time-work {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.number {
+    font-size: 22px;
+    line-height: 24px;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.product-info {
+    background-image: url("../img/invalid-name.jpg");
+}
+.intro-advantage {
+    font-size: 24px;
+    line-height: 30px;
+    color:#323232;
+}
+
+.product-advantage li {
+    font-size: 16px;
+    line-height: 22px;
+    color:#323232;
+}
+
+.new-blog {
+    background-image: url("../img/berry-fon.png");
+    background-repeat: no-repeat;
+}
+
+.new-blog h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.new-blog p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.subscription {
+    background-color: #f8f7f4;
+}
+
+.subscription p {
+    font-size: 16px;
+    line-height: 22px;
+    color:#5a5a5a;
+}
+
+.list-social-network {
+    list-style-type: none;
+}
+
+.documents {
+    font-size: 13px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.delivery {
+    font-weight: bold;
+}
+
+.feedback-title {
+    font-size: 24px;
+    line-height: 28px;
+    color:#323232;
+}
+
+/*Для страницы католога*/
+
+.name-basket,
+.result {
+    font-size: 13px;
+    line-height: 16px;
+    color:#323232;
+}
+
+.total-weight {
+    font-size:13px;
+    line-height: 16px;
+    color:#333333;
+}
+
+.price-basket {
+    font-size: 13px;
+    line-height: 16px;
+    color:#999999;
+}
+
+.table-result {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color:#323232;
+}
+
+.name-page {
+    font-size:35px;
+    line-height: 41px;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.breadcrumbs li {
+    font-size:14px;
+    line-height: 16px;
+    color:#ffffff;
+    opacity: 0.2;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.main-filter label{
+    font-size: 14px;
+    line-height: 16px;
+    color:#ffffff;
+    font-weight: 500;
+}
+/*Не работате*/
+.main-filter input {
+    font-size: 18px;
+    line-height: 18px;
+    color:#ffffff;
+    font-weight: 500;
+}
+
+.product h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color:#ffffff;
+    text-decoration: underline;
+}
+
+.price {
+    font-size: 45px;
+    line-height: 45px;
+    color:#ffffff;
+    font-weight: bold;
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.unit {
+    font-size: 30px;
+    line-height: 45px;
+    color:#ffffff;
+    font-weight: bold;
+    text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.pagination-list li {
+    font-size: 16px;
+    line-height: 18px;
+    color:#ffffff;
+    list-style-type: none;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+    color:#323232;
+    background-color: #ffffff;
+    padding:5px;
+    border-radius: 50px;
+}

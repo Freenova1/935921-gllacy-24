@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -12,7 +15,7 @@
           <li>
             <a href="catalog.html">Каталог</a>
             <ul class="catalog-list">
-              <li><a href="new.html">Новинки</a></li>
+              <li><a href="new.html"><span class="new-link">Новинки</span></a></li>
               <li><a href="creamy.html">Сливочное</a></li>
               <li><a href="sorbet.html">Щербеты</a></li>
               <li><a href="fruit-ice.html">Фруктовый лед</a></li>
@@ -38,14 +41,16 @@
             <input type="text" id="login-email" placeholder="Электронная почта">
             <input type="password" id="login-password" placeholder="Пароль">
             <button type="submit" class="red-button">Войти</button>
-            <a href="reset-password.html">Забыли пароль?</a>
-            <a href="registration.html">Новая регестрация</a>
+            <div class="user-help">
+              <a href="reset-password.html">Забыли пароль?</a>
+              <a href="registration.html">Новая регестрация</a>
+            </div>  
           </form>
         </div>
         <div class="basket">
          <a class="user-basket" href="basket.html">Пусто</a>
         </div>
-         <span>С 10 до 20, ежедневно</span>
+         <span class="time-work">С 10 до 20, ежедневно</span>
          <span class="number">8 812 450-25-25</span>
       </nav>
     </header>
@@ -55,7 +60,7 @@
       <section class="product-info">
         <h2 class="visually-hidden">Преимущество магазина Глейси</h2>
         <!--Думал сдесь применить тег dl dt dd, но решил что это излишнее-->
-        <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+        <b class="intro-advantage">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
         <ul class="product-advantage">
           <li>
             Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
@@ -72,7 +77,7 @@
         </ul>
       </section>
       <article class="new-blog">
-        <h3 class="visually-hidden">Новое в нашем блоге</h3>
+        <h3>Новое в нашем блоге</h3>
         <p>10 способов сервировки фруктовых щербетов к столу</p>
       </article>
       <section class="subscription">
@@ -96,7 +101,7 @@
       </div>
       <div class="footer-center">
         <ul class="documents">
-          <li><a href="#">Для поставщиков</a></li>
+          <li><a href="#"><span class="delivery">Для поставщиков</span></a></li>
           <li><a href="#">О производстве</a></li>
           <li><a href="#">Наши документы</a></li>
           <li><a href="#">Экологические стандарты</a></li>

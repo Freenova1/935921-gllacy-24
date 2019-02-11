@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Каталог</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
             <nav class="main-nav">
-            <a href="index.html"><img src="img/logo.svg" alt="Лого магазина Глейси" width="27" height="9"></a>
+            <a href="index.html"><img src="img/logo.svg" alt="Лого магазина Глейси" width="154" height="64"></a>
             <ul class="list-section">
                     <li class="linl-current">
                       <a href="catalog.html">Каталог</a>
@@ -49,21 +52,21 @@
                     <table class="table-basket">
                         <tr>
                             <th><img src="img/catalog-logo1.png" width="33" height="33" alt=""></th>
-                            <th>Пломбир с апельсиновым джемом</th>
-                            <th>1,5 кг х 200 руб.</th>
-                            <th>300 руб.</th>
+                            <th><span class="name-basket">Пломбир с апельсиновым джемом</span></th>
+                            <th><span class="total-weight">1,5 кг х</span><span class="price-basket"> 200 руб.</span></th>
+                            <th><span class="result">300 руб.</span></th>
                         </tr>
                         <tr>
                             <th><img src="img/catalog-logo3.png" width="33" height="33" alt=""></th>
-                            <th>Клубничный пломбир с присыпкой из белого шоколада</th>
-                            <th>1,5 кг х 300 руб.</th>
-                            <th>450 руб.</th>
+                            <th><span class="name-basket">Клубничный пломбир с присыпкой из белого шоколада</span></th>
+                            <th><span class="total-weight">1,5 кг х</span><span class="price-basket"> 300 руб.</span></th>
+                            <th><span class="result">450 руб.</span></th>
                         </tr>
                     </table>
                     <span class="table-result">Итого:750 руб.</span>
                     <button type="button" class="red-button">Оформить заказ</button> 
                   </div>
-            <span>С 10 до 20, ежедневно</span>
+            <span class="time-work">С 10 до 20, ежедневно</span>
             <span class="number">8 812 450-25-25</span>
             </nav>
         </header>
@@ -78,8 +81,8 @@
             </section>
             <section class="visually-hidden">
                 <h2 class="visually-hidden">Фильтр товаров</h2>
-                <form action="echo.htmlacademy.ru" method="get">
-                    Сортировка
+                <form action="echo.htmlacademy.ru" method="get" class="main-filter">
+                    <label>Сортировка</label>
                     <select name="sorting" id="sorting">
                         <option value="by-popularity">По популярности</option>
                         <option value="by-cheap">Сначало недорогие</option>
@@ -88,14 +91,14 @@
                     </select>
                     <label for="range-price">Цена: 100 руб. - 500 руб.</label>
                     <input type="range" id="range-price">
-                    Жирность:
+                    <label>Жирность:</label>
                     <ul>
                         <li><input type="radio" name="percent-fat" value="0">0%</li>
                         <li><input type="radio" name="percent-fat" value="10">10%</li>
                         <li><input type="radio" name="percent-fat" value="30">30%</li>
                         <li><input type="radio" name="percent-fat" value=">30">Выше 30%</li>
                     </ul>
-                    Наполнители
+                    <label>Наполнители</label>
                     <ul>
                         <li><input type="checkbox" name="filler" value="chocolate">Шоколадные</li>
                         <li><input type="checkbox" name="filler" value="shuger">Сахарные присыпки</li>
@@ -207,11 +210,11 @@
                     </li>
                 </ul>
                 <ul class="pagination-list">
-                    <li class="pagination-item pagination-item-current"><a href="#"></a>1</li>
-                    <li class="pagination-item"><a href="#"></a>2</li>
-                    <li class="pagination-item"><a href="#"></a>3</li>
-                    <li class="pagination-item"><a href="#"></a>4</li>
-                    <li class="pagination-item"><a href="#"></a>5</li>
+                    <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+                    <li class="pagination-item"><a href="#">2</a></li>
+                    <li class="pagination-item"><a href="#">3</a></li>
+                    <li class="pagination-item"><a href="#">4</a></li>
+                    <li class="pagination-item"><a href="#">5</a></li>
                 </ul>
             </section>
         </main>
